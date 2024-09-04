@@ -12,23 +12,15 @@ Running `cargo run -- example/example_export_data.csv` produces this plot:
 
 ![Example plot](example/glucose_levels.png)
 
-# Running the program
-
-Follow the instructions in the **Development** section on how to install
-the right python dependencies before running this program.
-
-Then run the program by running `./plot.py <path-to-your-csv>`. Give it a
-little time. Resulting plot will be in a file called plot.png`
+# Usage
 
 ```
 ❱ ./dv-rs
 Usage: dv-rs <csv_file_path>
 ```
 
-## Development
+# Building and running the program from scratch
 
-1. install [`uv`](https://github.com/astral-sh/uv)
-2. create a venv in the project directory `uv venv` and follow instructions
-3. install dependencies `uv pip install -r requirements.txt`
-
-You are good to go.
+Install the [rust tool chain](https://rustup.rs/), and then run the program
+`cargo run -- <path_to_csv>`. Give it a little time. Resulting plot will be in
+a file called `glucose_levels.png`
